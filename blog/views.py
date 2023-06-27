@@ -2,13 +2,16 @@ from django.shortcuts import render
 
 from .models import (
     Blog,
+    Tag
 )
 
 
 def home(request):
     blogs = Blog.objects.order_by('-created_date')
+    tags = Tag.objects.order_by('-created_date')
     context = {
-        "blogs": blogs
+        "blogs": blogs,
+        "tags": tags
     }
     return render(request, 'home.html', context)
 
