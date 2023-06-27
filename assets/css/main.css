@@ -39,6 +39,7 @@
 .fa-heart {
     color: red !important;
 }
+
 .empty-heart {
     color: #CDCDCD !important;
 }
@@ -65,7 +66,8 @@
     margin-bottom: 10px !important;
 }
 
-input, textarea {
+input,
+textarea {
     text-transform: none !important;
 }
 
