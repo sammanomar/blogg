@@ -11,6 +11,8 @@ urlpatterns = [
     path('profile/', profile, name='profile'),
     path('change_profile_picture/', change_profile_picture,
          name='change_profile_picture'),
+    path('view_user_information/<str:username>/',
+         view_user_information, name="view_user_information"),
 ]
 
 # first and 2nd row changed from 'login/', 'logout/' into 'blog_login/', 'blog_logout/'
