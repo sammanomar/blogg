@@ -1,15 +1,22 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth import login, logout, authenticate
+from django.views.decorators.cache import never_cache
 
 from .forms import (
     UserRegistrationForm,
     LoginForm
 )
 
+from .decorators import (
+    not_logged_in_required
+)
+
 # Create your views here.
 
 
+@never_cache
+@not_logged_in_required
 def login_user(request):
     form = LoginForm()
 
@@ -37,6 +44,8 @@ def logout_user(request):
     return redirect('login')
 
 
+@never_cache
+@not_logged_in_required
 def register_user(request):
     form = UserRegistrationForm()
 
