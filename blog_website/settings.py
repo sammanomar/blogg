@@ -154,3 +154,8 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'user_profile.User'
+
+AUTHENTICATION_BACKENDS = (
+    "user_profile.backends.EmailAuthenticationBackend",
+    "django.contrib.auth.backends.ModelBackend"
+)
