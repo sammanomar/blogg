@@ -15,6 +15,7 @@ urlpatterns = [
          view_user_information, name="view_user_information"),
     path('follow_or_unfollow/<int:user_id>/',
          follow_or_unfollow_user, name='follow_or_unfollow_user'),
+    path('user_notifications/', user_notifications, name='user_notifications'),
 ]
 
 # first and 2nd row changed from 'login/', 'logout/' into 'blog_login/', 'blog_logout/'
