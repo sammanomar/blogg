@@ -16,7 +16,6 @@ from .models import (
     Tag,
     Comment
 )
-
 from .forms import TextForm, AddBlogForm
 
 
@@ -35,7 +34,7 @@ def blogs(request):
     tags = Tag.objects.order_by('-created_date')
     page = request.GET.get('page', 1)
     paginator = Paginator(queryset, 4)
-
+    
     try:
         blogs = paginator.page(page)
     except EmptyPage:
@@ -43,7 +42,7 @@ def blogs(request):
     except PageNotAnInteger:
         blogs = paginator.page(1)
         return redirect('blogs')
-
+    
     context = {
         "blogs": blogs,
         "tags": tags,
@@ -59,7 +58,7 @@ def category_blogs(request, slug):
     page = request.GET.get('page', 1)
     paginator = Paginator(queryset, 2)
     all_blogs = Blog.objects.order_by('-created_date')[:5]
-
+    
     try:
         blogs = paginator.page(page)
     except EmptyPage:
@@ -83,7 +82,7 @@ def tag_blogs(request, slug):
     page = request.GET.get('page', 1)
     paginator = Paginator(queryset, 2)
     all_blogs = Blog.objects.order_by('-created_date')[:5]
-
+    
     try:
         blogs = paginator.page(page)
     except EmptyPage:
@@ -147,12 +146,12 @@ def add_reply(request, blog_id, comment_id):
 def like_blog(request, pk):
     context = {}
     blog = get_object_or_404(Blog, pk=pk)
-
+    
     if request.user in blog.likes.all():
         blog.likes.remove(request.user)
         context['liked'] = False
         context['like_count'] = blog.likes.all().count()
-
+        
     else:
         blog.likes.add(request.user)
         context['liked'] = True
@@ -165,7 +164,7 @@ def search_blogs(request):
     search_key = request.GET.get('search', None)
     recent_blogs = Blog.objects.order_by('-created_date')
     tags = Tag.objects.order_by('-created_date')
-
+    
     if search_key:
         blogs = Blog.objects.filter(
             Q(title__icontains=search_key) |
@@ -196,7 +195,7 @@ def my_blogs(request):
 
     if delete:
         blog = get_object_or_404(Blog, pk=delete)
-
+        
         if request.user.pk != blog.user.pk:
             return redirect('home')
 
@@ -216,9 +215,9 @@ def my_blogs(request):
         "blogs": blogs,
         "paginator": paginator
     }
-
+    
     return render(request, 'my_blogs.html', context)
-
+    
 
 @login_required(login_url='login')
 def add_blog(request):
@@ -270,9 +269,9 @@ def update_blog(request, slug):
 
     if request.method == "POST":
         form = AddBlogForm(request.POST, request.FILES, instance=blog)
-
+        
         if form.is_valid():
-
+            
             if request.user.pk != blog.user.pk:
                 return redirect('home')
 
@@ -305,6 +304,7 @@ def update_blog(request, slug):
             return redirect('blog_details', slug=blog.slug)
         else:
             print(form.errors)
+
 
     context = {
         "form": form,

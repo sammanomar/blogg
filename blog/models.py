@@ -26,10 +26,10 @@ class Tag(models.Model):
     created_date = models.DateField(auto_now_add=True)
 
     def __str__(self) -> str:
-        return self.title
+        return self.title    
 
     def save(self, *args, **kwargs):
-        self.slug = generate_unique_slug(self, self.title, update=True)
+        self.slug = slugify(self.title)
         super().save(*args, **kwargs)
 
 
@@ -67,7 +67,7 @@ class Blog(models.Model):
 
     def save(self, *args, **kwargs):
         updating = self.pk is not None
-
+        
         if updating:
             self.slug = generate_unique_slug(self, self.title, update=True)
             super().save(*args, **kwargs)

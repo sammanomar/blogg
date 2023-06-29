@@ -11,19 +11,20 @@
                 <h4 class="text-center">{{blogs.count}} results found for {{search_key}}</h4>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="all-blog-posts">
-                    <div class="row">
-                        {% for blog in blogs %}
-                        {% include 'blog_card.html' %}
-                        {% endfor %}
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="all-blog-posts">
+            <div class="row">
+              {% for blog in blogs %}
+              {% include 'blog_card.html' %}
+              {% endfor %}
             </div>
-            {% include 'sidebar.html' with blogs=recent_blogs %}
+          </div>
         </div>
+        {% include 'sidebar.html' with blogs=recent_blogs %}
+      </div>
     </div>
-</section>
+  </section>
+
 
 {% endblock content %}

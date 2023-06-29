@@ -124,7 +124,7 @@ def view_user_information(request, username):
             return redirect("profile")
 
         followers = account.followers.filter(
-            followed_by_id=request.user.id
+            followed_by__id=request.user.id
         )
         if followers.exists():
             following = True
