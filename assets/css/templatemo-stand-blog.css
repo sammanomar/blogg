@@ -424,7 +424,6 @@ header .navbar {
 }
 
 
-
 /* Blog Posts */
 
 .blog-posts {
@@ -438,8 +437,10 @@ header .navbar {
 .blog-posts .blog-thumb img {
     width: 100%;
     overflow: hidden;
-
+    height: 416.51px
 }
+
+/* Height added to images */
 
 .blog-posts .down-content {
     padding: 40px;
