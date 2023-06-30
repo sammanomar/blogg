@@ -84,3 +84,12 @@ textarea {
 .owl-carousel .owl-item img {
     height: 440px !important;
 }
+
+.banner-home {
+    height: 416px;
+
+}
+
+.banner-blogcard {
+    height: 198px;
+}
