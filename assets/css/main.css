@@ -93,3 +93,10 @@ textarea {
 .banner-blogcard {
     height: 198px;
 }
+
+
+.truncatechars {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
