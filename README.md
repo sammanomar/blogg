@@ -1,39 +1,52 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Technology blog
 
-Welcome,
+Technology blog is a website/app that targets people who appreciate technology. This app is for technolgists who want to stay updated about latest technologies world wide. It allows users to have their own accounts or blogs, read and write their own posts and articles exclusively about technology, interact with other users by comments, likes or follows and share their common passion about up to date technology.
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Site view across devices](static/images-readme/readme-amiresponsive.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+The live link for "Technology blog" can be found [HERE](https://bllog-30ebbac877ad.herokuapp.com/)
 
-## Codeanywhere Reminders
+## Table of Contents
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+- [UX](#ux "UX")
+  - [Site Purpose](#site-purpose "Site Purpose")
+  - [Site Goal](#site-goal "Site Goal")
+  - [Audience](#audience "Audience")
+  - [Communication](#communication "Communication")
+  - [Current User Goals](#current-user-goals "Current User Goals")
+  - [New User Goals](#new-user-goals "New User Goals")
+- [User Stories](#user-stories "User Stories")
+  - [Admin stories](#admin-stories "Admin stories")
+  - [Artist stories](#artist-stories "Artist stories")
+  - [Visitor stories](#visitor-stories "Visitor stories")
+- [Design](#design "Design")
+  - [Colour Scheme](#colour-scheme "Colour Scheme")
+  - [Typography](#typography "Typography")
+  - [Imagery](#imagery "Imagery")
+- [Features](#features "Features")
+  - [Existing Features](#existing-features "Existing Features")
+  - [C.R.U.D](#crud "C.R.U.D")
+- [Testing](#testing "Testing")
+  - [Validator Testing](#validator-testing "Validator Testing")
+  - [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
+- [Technologies Used](#technologies-used "Technologies Used")
+  - [Main Languages Used](#main-languages-used "Main Languages Used")
+  - [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-used "Frameworks, Libraries & Programs Used")
+- [Deployment](#deployment "Deployment")
+- [Credits](#credits "Credits")
+  - [Content](#content "Content")
+  - [Media](#media "Media")
 
-`python3 -m http.server`
+## UX
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Site Purpose:
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+The intent of the site is to bring technologists together. [“Technology blog”](https://bllog-30ebbac877ad.herokuapp.com/) Is an online technology network platform where site users can stay up to date with anything related to technology.
 
-`http_server`
+### Site Goal:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+To build a platform that allows technology lovers to find all what they want to know about latest cutting edge technologies world wide whether by reading posts or writting posts as well.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Audience:
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+For anyone who have a passion for technology in their lives. This website have no restrictions at all over user age.
