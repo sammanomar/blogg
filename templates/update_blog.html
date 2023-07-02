@@ -20,8 +20,8 @@
                         <label for="title">Blog Category</label>
                         <select class="form-control" name="category" id="category_id">
                             {% for category in categories %}
-                            <option value="{{category.id}}" {% if form.instance.category.pk==category.pk %}selected {%
-                                endif %}>{{category.title}}</option>
+                            <option value="{{category.id}}">
+                                {{category.title}}</option>
                             {% endfor %}
                             <p class="text-danger py-1">{{form.instance.category.errors}}</p>
                         </select>
@@ -40,7 +40,7 @@
                     <div class="form-group">
                         <label for="title">Tags</label>
                         <textarea class="form-control" name="tags" id="" cols="30" rows="10"
-                            placeholder="enter comma seprrated values">{{form.instance.tags}}</textarea>
+                            placeholder="enter comma separated values">{{form.instance.tags}}</textarea>
                         <p class="text-danger py-1">{{form.instance.tags.errors}}</p>
                     </div>
                     <div class="form-group my-2">
