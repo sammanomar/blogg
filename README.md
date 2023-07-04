@@ -50,3 +50,66 @@ To build a platform that allows technology lovers to find all what they want to 
 ### Audience:
 
 For anyone who have a passion for technology in their lives. This website have no restrictions at all over user age.
+
+### Communication:
+With a clean, easy to follow layout, the user - both writers and readers alike - are guided through the features of the website with an ease of navigation.
+
+### Current User Goals:
+- To allow users or bloggers to easily be able to create their own profiles, post their articles and posts to the technology world, view all their posts, edit, update them and delete them.
+- To view all the available technology posts, articles and blogs created by bloggers both on their profile page, and by clicking on the blogger name when viewing a technology post, category or tag. 
+- Interact with other bloggers (by comments, likes, follows) and stay up to date with the technlogy world.
+- To receive a notification with every single follow, comment or like with an additonal feature to mute the notifications.
+- To search posts using key words in the website using the search box feature.
+- To filter the posts in the website by categories, tag clouds and users.
+- to see the recent and latest posts.
+- to see any related posts when you open any post.
+- to see the total number of posts at the top of blogs page.
+
+### Future Goals:
+
+- To linke the notification system with the provided email addresses by the users for any new posts, likes or comments
+- To share any posts with other users at facebook, twitter and social media.
+- To create a commercial side for the website or the app connecting with technology institutes, universities, companies, and organizations that might have an interest to post ads for related courses, jobs and events at the website. Moreover, add a monthly and yearly subscriptions plans.
+
+## User Stories
+All stories have been implemented.
+
+USER STORY: Crud operation on blogs 
+1. As a **site user and admin** I can **I can view a list of posts** so that **I can create, read, update and delete them**
+USER STORY: Create Custom user model
+2. As a **admin** I can **create a database in django** so that **I can apply CRUD operation on it**
+USER STORY: Registration/Authentication through username
+3. As a **Site User/Admin** I can **I can register an account** so that **I can have my own blog**
+USER STORY: Registration/Authentication through email
+4. As a **Site User/Admin** I can **register an account** so that **I can have my own blog**
+USER STORY: Personal profile management
+5. As a **Site User** I can **have and manage my personal profile** so that **I can update it, see my own blogs and have a full control on it**
+USER STORY: Filter blogs by different criteria (title, category, tags)
+6. As a **Site User** I can **filter blogs by different criteria** so that **I can easily find my preferences**
+USER STORY: Search blogs by different criteria
+7. As a **Site User** I can **search blogs by different criteria** so that **I reach easily to my preferred blogs**
+USER STORY: Like blogs
+8. As a **Site User** I can **like blogs** so that **I can interact with the content**
+USER STORY: Comment and replies on blogs
+9. As a **Site User** I can **comment and reply on blogs** so that **I can interact with others in the website**
+USER STORY: Follow and unfollow other users
+10. As a **Site User** I can **follow and unfollow other user** so that **I can keep myself posted about my favorite users**
+USER STORY: Implementing generic relations
+11. As a  **site user** I can  **receive notifications when someone post, comment, like or follow me**  so that  **I can stay connected**
+USER STORY: Notification system
+12. As a **Site User** I can **receive notifications when users like or write comments** so that **I can interact with other users**
+USER STORY: Mute/unmute notifications
+13. As a **Site User** I can **mute and unmute notifications** so that **I can be selective over my notifications preferences**
+USER STORY: Deployment on Heroku
+14. As a **Admin** I can **deploy my blog project** so that **other users can access it**
+USER STORY: Models Creation
+15. As an **Admin** I can **create categories, tags, blogs, comments, replies posts** so that **I can admin them in Django database**
+USER STORY: Site Pagination
+16. As a **Site USer** I can **view a paginated list of posts** so that **easily select a post to view**
+USER STORY: View Others Profile
+17. As a **Site user** I can **view others profile** so that **I can see the number of posts, posts, following and followers number**
+
+
+
+
+
