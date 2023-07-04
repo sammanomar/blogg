@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get("DEBUG")
 
 ALLOWED_HOSTS = ["blog_website.herokuapp.com",
-                 "8000-sammanomar-blogg-fnpi5gon18.us2.codeanyapp.com", "bllog-30ebbac877ad.herokuapp.com"]
+                 "8000-sammanomar-blogg-fnpi5gon18.us2.codeanyapp.com", '8000-sammanomar-blogg-57xvg8vgixv.ws-eu101.gitpod.io', "bllog-30ebbac877ad.herokuapp.com"]
 
 
 # Application definition
