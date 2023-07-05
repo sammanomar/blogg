@@ -1,0 +1,106 @@
+[
+    {
+        "model": "user_profile.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$W5OsKO7OKJ5Ur92R9vViLl$xsYUb+Sd096pbsdYFcnF9nyb05lGCKrCeUA+dSpQBdU=",
+            "last_login": "2023-07-04T22:22:18.107Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "aaa",
+            "last_name": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2023-06-26T11:12:53Z",
+            "email": "sammanomar@hotmail.com",
+            "profile_image": "media/profile_images/thisisengineering-raeng-sbVu5zitZt0-unsplash_1_qmpnm6",
+            "groups": [],
+            "user_permissions": [],
+            "followers": [
+                6
+            ]
+        }
+    },
+    {
+        "model": "user_profile.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$ofoxVzcIS9abhePKvIKfCW$E8wp16qCYs61aIA/bJcAQ4DfIcAZsBRZe6eUYSN5RI4=",
+            "last_login": "2023-07-03T11:01:40.290Z",
+            "is_superuser": false,
+            "username": "adminn",
+            "first_name": "",
+            "last_name": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-06-28T13:34:12.621Z",
+            "email": "a@a.com",
+            "profile_image": "",
+            "groups": [],
+            "user_permissions": [],
+            "followers": []
+        }
+    },
+    {
+        "model": "user_profile.follow",
+        "pk": 6,
+        "fields": {
+            "followed": 1,
+            "followed_by": 2,
+            "muted": true,
+            "created_date": "2023-06-29T15:26:50.391Z"
+        }
+    },
+    {
+        "model": "notification.notificaiton",
+        "pk": 1,
+        "fields": {
+            "content_type": 12,
+            "object_id": 5,
+            "user": 1,
+            "text": "adminn started following you",
+            "is_seen": true,
+            "notification_types": "Follow",
+            "created_date": "2023-06-29T11:19:44.151Z"
+        }
+    },
+    {
+        "model": "notification.notificaiton",
+        "pk": 2,
+        "fields": {
+            "content_type": 9,
+            "object_id": 10,
+            "user": 1,
+            "text": "adminn liked your blog",
+            "is_seen": true,
+            "notification_types": "Like",
+            "created_date": "2023-06-29T11:25:22.543Z"
+        }
+    },
+    {
+        "model": "notification.notificaiton",
+        "pk": 3,
+        "fields": {
+            "content_type": 12,
+            "object_id": 6,
+            "user": 1,
+            "text": "adminn started following you",
+            "is_seen": true,
+            "notification_types": "Follow",
+            "created_date": "2023-06-29T15:26:50.654Z"
+        }
+    },
+    {
+        "model": "notification.notificaiton",
+        "pk": 4,
+        "fields": {
+            "content_type": 9,
+            "object_id": 11,
+            "user": 1,
+            "text": "admin liked your blog",
+            "is_seen": true,
+            "notification_types": "Like",
+            "created_date": "2023-06-29T20:39:42.871Z"
+        }
+    }
+]
