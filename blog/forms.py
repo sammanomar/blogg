@@ -9,7 +9,7 @@ class TextForm(forms.Form):
 
 
 class AddBlogForm(forms.ModelForm):
-    description = SummernoteTextField
+    description = SummernoteTextFormField()
     
     class Meta:
         model = Blog
