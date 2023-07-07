@@ -9,7 +9,7 @@ likeIcon.onclick = () => {
         method: 'GET',
         headers: {
             'Content-type': 'applicatin/json'
-        }
+}
     })
     .then(response => {
         return response.json();
@@ -17,10 +17,10 @@ likeIcon.onclick = () => {
     .then(data => {
         if(data.liked) {
             likeIcon.classList.remove('empty-heart');
-        }
+}
         else {
             likeIcon.classList.add('empty-heart');
-        }
+}
         likeCount.innerHTML = data.like_count;
     })
     .catch(error => {
