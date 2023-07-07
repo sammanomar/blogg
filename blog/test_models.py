@@ -1,17 +1,10 @@
 from django.test import SimpleTestCase
+from .models import Category, Tag, Blog, Comment, Reply
 
 # Create your tests here.
 
-class TestDjango(SimpleTestCase):
+class TestModels(SimpleTestCase):
 
-    def test_this_thing_works(self):
-        self.assertEqual(1, 1)
-
-    def test_this_thing_works2(self):
-        self.assertEqual(1, 1)
-
-    def test_this_thing_works3(self):
-        self.assertEqual(1, 1)
-
-    def test_this_thing_works4(self):
-        self.assertEqual(1, 1)
+    def test_done_defaults_to_false(self):
+        category = Category.objects.create(name='Test Blog Category')
+        self.assertFalse(category.done)
