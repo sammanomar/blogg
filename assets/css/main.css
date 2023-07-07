@@ -100,3 +100,6 @@ textarea {
     text-overflow: ellipsis;
 }
 
+.image-height{
+    height: 500px;
+}
