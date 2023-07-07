@@ -103,3 +103,7 @@ textarea {
 .image-height{
     height: 500px;
 }
+
+.blog-posts .comments ul li .author-thumb img{
+    height: 100px;
+}
