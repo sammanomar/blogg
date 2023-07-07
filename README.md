@@ -190,7 +190,6 @@ All fonts were obtained from fonts.googleapis (Ready to use template):
 - SQL - Postgres
 
 
-
 ### Installed Packages:
 - 'django<4' gunicorn
 - dj_database_url psycopg2
