@@ -29,7 +29,7 @@ The live link for "Technology blog" can be found [HERE](https://bllog-30ebbac877
   - [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
 - [Technologies Used](#technologies-used "Technologies Used")
   - [Main Languages Used](#main-languages-used "Main Languages Used")
-  - [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-used "Frameworks, Libraries & Programs Used")
+  - [Installed Packages:](#installed-packages "Installed Packages:")
 - [Deployment](#deployment "Deployment")
 - [Credits](#credits "Credits")
 
