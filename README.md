@@ -188,6 +188,8 @@ All fonts were obtained from fonts.googleapis (Ready to use template):
 ### Features Left to Implement
 - Commerical side
 - Social media sharing
+- Take defensive programming measurements when deleting blogs or choosing a password
+
 
 ## Testing
 ### Fixed Bugs
