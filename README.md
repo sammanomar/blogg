@@ -317,6 +317,5 @@ The site was deployed to Heroku. The steps to deploy are as follows:
 - https://www.pexels.com/
 - https://unsplash.com/
 - https://www.freepik.com/
-- https://github.com/GoogleChrome/lighthouse/blob/main/core/audits/metrics/largest-contentful-paint.js : I have used this JavaScript template to increase the performance of my website at lighthouse test
 
 
