@@ -14,7 +14,7 @@ The live link for "Technology blog" can be found [HERE](https://bllog-30ebbac877
   - [Audience](#audience "Audience")
   - [Communication](#communication "Communication")
   - [Current User Goals](#current-user-goals "Current User Goals")
-  - [New User Goals](#new-user-goals "New User Goals")
+  - [Future Goals](#future-goals "Future Goals")
 - [User Stories](#user-stories "User Stories")
 - [Design](#design "Design")
   - [Colour Scheme](#colour-scheme "Colour Scheme")
@@ -23,15 +23,15 @@ The live link for "Technology blog" can be found [HERE](https://bllog-30ebbac877
 - [Features](#features "Features")
   - [Existing Features](#existing-features "Existing Features")
 - [Testing](#testing "Testing")
+  - [Fixed Bugs](#fixed-bugs "Fixed Bugs")
   - [Validator Testing](#validator-testing "Validator Testing")
+  - [Lighthouse Testing](#Lighthouse-testing "Lighthouse Testing")
   - [Unfixed Bugs](#unfixed-bugs "Unfixed Bugs")
 - [Technologies Used](#technologies-used "Technologies Used")
   - [Main Languages Used](#main-languages-used "Main Languages Used")
   - [Frameworks, Libraries & Programs Used](#frameworks-libraries-programs-used "Frameworks, Libraries & Programs Used")
 - [Deployment](#deployment "Deployment")
 - [Credits](#credits "Credits")
-  - [Content](#content "Content")
-  - [Media](#media "Media")
 
 ## UX
 
@@ -48,9 +48,11 @@ To build a platform that allows technology lovers to find all what they want to 
 For anyone who have a passion for technology in their lives. This website have no restrictions at all over user age.
 
 ### Communication:
+
 With a clean, easy to follow layout, the user - both writers and readers alike - are guided through the features of the website with an ease of navigation.
 
 ### Current User Goals:
+
 - To allow users or bloggers to easily be able to create their own profiles, post their articles and posts to the technology world, view all their posts, edit, update them and delete them.
 - To view all the available technology posts, articles and blogs created by bloggers both on their profile page, and by clicking on the blogger name when viewing a technology post, category or tag. 
 - Interact with other bloggers (by comments, likes, follows) and stay up to date with the technlogy world.
@@ -68,6 +70,7 @@ With a clean, easy to follow layout, the user - both writers and readers alike -
 - To create a commercial side for the website or the app connecting with technology institutes, universities, companies, and organizations that might have an interest to post ads for related courses, jobs and events at the website. Moreover, add a monthly and yearly subscriptions plans.
 
 ## User Stories
+
 All stories have been implemented.
 
 USER STORY: Crud operation on blogs 
@@ -106,41 +109,37 @@ USER STORY: View Others Profile
 17. As a **Site user** I can **view others profile** so that **I can see the number of posts, posts, following and followers number**
 
 ## Design
-
 ### Wireframes:
 
-##### Home Page: 
+#### Home Page: 
 
 ![Desktop Home](assets/screenshots/wireframe.png)
 
-##### Blogs Page:
+#### Blogs Page:
 
 ![Desktop Blogs](assets/screenshots/wireframee.png)
 
-### Database Schema
+#### Database Schema
 
 ![Database Schema](assets/screenshots/databaseschema.png)
 
-### Colour Scheme:
+#### Colour Scheme:
 
 ![Colour Palette](assets/screenshots/colorscheme.png)
 
 ### Typography:
+
 All fonts were obtained from fonts.googleapis (Ready to use template):
 1. Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i
 2. Fontawesome
 3. flexslider-icon for the slider of images at the home page
 
 ### Imagery:
+
 - All photography for the fictional blogs were downloaded from pexel and unsplash website.
 
 ## Features
-
 ### Existing Features:
-
-#### Home Page:
-
-![Home page](assets/screenshots/homepage.png)
 
 #### Blogs Page:
 
@@ -186,12 +185,13 @@ All fonts were obtained from fonts.googleapis (Ready to use template):
 
 ![Search Page](assets/screenshots/search.png)
 
-
 ### Features Left to Implement
 - Commerical side
 - Social media sharing
 
 ## Testing
+### Fixed Bugs
+
 1. Login.html/logut.html pages not loading:
  - It was solved through tutor support. It turned out that ‘login/’ and 'logout/' urls are reserved by codeanywhere and can’t be used. 
  - I had to change the paths in the urls.py file to ‘blog_login/’ and 'blog_logout instead of ‘login/’ 'logout/'.
@@ -224,6 +224,7 @@ All fonts were obtained from fonts.googleapis (Ready to use template):
 
 
 ### Validator Testing
+
 - html files pass through the [W3C validator](https://validator.w3.org/) with no html issues found
 - Errors listed only reference {%%} & {{}} tags.
 
@@ -234,13 +235,17 @@ All fonts were obtained from fonts.googleapis (Ready to use template):
 - An automated test has been conducted successfully for the python forms of the blog
 ![Automated test message](assets/screenshots/automatedtest.png)
 
-- page has an excellent Accessibility rating in Lighthouse
-
-![Accessibility score](static/images-readme/readme-lighthouse.png)
-
 - Python files passed through [PEP8 Online](https://www.pythonchecker.com/) with no issues found.
 
 ![PEP8 message](assets/screenshots/pythonchecker.png)
+
+
+### Lighthouse Testing
+
+![Home Page](assets/screenshots/lighthousehp.png)
+![Blogs Page](assets/screenshots/lighthouseblogs.png)
+![Category Page](assets/screenshots/lighthousecat.png)
+
 
 - Tested the site opens in Chrome & Safari without issues.
 - All links open to external pages as intended.
@@ -249,8 +254,10 @@ All fonts were obtained from fonts.googleapis (Ready to use template):
 - I couldn't fix a bug with the Tag field (many to many field). I can add and update as much tags I want but when I try to delete an exist tags, it doesn't reflect when I update the blog.
 ![Unfixed bug](assets/screenshots/unfixedbug.png)
 
+
 ## Technologies Used
 ### Main Languages Used
+
 - HTML5
 - CSS3
 - Javascript
@@ -262,6 +269,7 @@ All fonts were obtained from fonts.googleapis (Ready to use template):
 
 
 ### Installed Packages:
+
 - 'django<4' gunicorn
 - dj_database_url psycopg2
 - dj3-cloudinary-storage
@@ -270,6 +278,7 @@ All fonts were obtained from fonts.googleapis (Ready to use template):
 
 
 ## Deployment
+
 The site was deployed to Heroku. The steps to deploy are as follows:
 - Install Django & Gunicorn:
 ```pip3 install 'django<4' gunicorn```
