@@ -231,8 +231,3 @@ The site was deployed to Heroku. The steps to deploy are as follows:
 - connected my github account to Heroku through the Deploy tab
 - connected my github project repository, and then clicked on the "Deploy" button
 
-
-
-
-
-

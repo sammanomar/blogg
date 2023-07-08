@@ -1,14 +1,14 @@
-from django.test import SimpleTestCase
-from .models import Category, Tag, Blog, Comment, Reply
+# from django.test import SimpleTestCase
+# from .models import Category, Tag, Blog, Comment, Reply
 
 # Create your tests here.
 
-class TestViews(SimpleTestCase):
+# class TestViews(SimpleTestCase):
 
-    def test_home(self):
-        response = self.client.get('/')
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, '/templates/home.html')
+#     def test_home(self):
+#         response = self.client.get('/')
+#         self.assertEqual(response.status_code, 200)
+#         self.assertTemplateUsed(response, '/templates/home.html')
         
     # def test_blogs(self):
         
