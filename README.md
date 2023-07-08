@@ -172,19 +172,19 @@ All fonts were obtained from fonts.googleapis (Ready to use template):
 
 #### Notifications Page:
 
-![Notifications Page]((assets/screenshots/notifications.png))
+![Notifications Page](assets/screenshots/notifications.png)
 
 #### Login/Logout Page:
 
-![Login/Logout Page]((assets/screenshots/loginout.png))
+![Login/Logout Page](assets/screenshots/loginout.png)
 
 #### Signup Page:
 
-![Sign Up Page]((assets/screenshots/signup.png))
+![Sign Up Page](assets/screenshots/signup.png)
 
 #### Search Page:
 
-![Search Page]((assets/screenshots/search.png))
+![Search Page](assets/screenshots/search.png)
 
 
 ### Features Left to Implement
@@ -311,7 +311,7 @@ The site was deployed to Heroku. The steps to deploy are as follows:
 - https://getbootstrap.com/docs/4.1/components/navbar/: I have used it for the navbar
 - https://getbootstrap.com/docs/4.1/components/alerts/: I have used it for the alert messages
 - The brilliant tutor support team (Joshua, Alan, Sean, Ed, Oisin, Gemma).
-- Kasia the community content creator at CI.
+- The brlliant Kasia (the community content creator at CI)
 - "I think therefore I blog" + "Hello Django" + Slack + Stackoverflow.
 - Psychological support by my mentor Lauren Nicole.
 - https://www.pexels.com/
